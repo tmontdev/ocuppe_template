@@ -1,0 +1,277 @@
+.whole-block
+    size(100)
+#home
+	font-family: $font1
+	height 100vh
+	@media(max-width:767px)
+		margin-top 3rem !important
+	.home-slider
+		height 100%
+		width  100%
+		float left
+		.slick-list
+			height 100% !important
+			display block
+			z-index 900
+			.slick-track
+				height 100%
+				display block
+				.slide
+					background-size cover
+					height 100%
+					display block
+					.overlay
+						display block
+						height 100%
+						width 100%
+						float left
+						background-color alpha(black, 40%)
+						.container
+							height 100%
+							text-align center
+
+							.text-title
+								padding-top 20%
+								color white
+								font-family $font2
+								text-shadow 0px 0px 5px black
+								font-size 22px
+							.text-subtitle
+								color white
+								font-family $font1
+								font-weight 300
+								text-shadow 0px 0px 5px black
+								font-size 20px
+								margin-bottom 20px
+								@media(max-width: 991px)
+									margin-bottom 50vh
+							a
+								padding 10px 5px
+								color white
+								border-radius 5px
+								margin auto
+								width 150px
+								z-index 1050
+								font-family $font1
+								text-decoration none
+								transition all 250ms ease-in-out
+								box-shadow 0px 0px 5px black
+								&:hover
+									box-shadow 0px 0px 5px white
+#company    	
+    size(100)
+	.company-presentation
+		font-family $font1
+		size(100)
+		.company-img
+			size(40)
+			background-repeat: no-repeat
+			background-size cover
+			background-position center center
+			@media(max-width 767px)
+				display none
+		.company-content-area
+			size(60)
+			color white
+			background-color $color6
+			padding 60px 70px
+			@media(max-width: 767px)
+				size(100)
+			.company-title
+				// text-align: center
+				
+				color $color1
+				padding-bottom 20px 
+				h3
+					font-weight: bold
+			.company-content
+				font-size: 18px
+			.company-content-itens
+				size(100)
+				padding 20px 0px
+				.Missão
+					border-right dashed 1px white
+					line-height 50px
+				.Visão
+					line-height 50px
+					
+				.Valores
+					line-height 50px
+					@media(max-width: 850px)
+						border-right dashed 1px white
+				.Política-de-Qualidade
+					padding 0px 5px
+					@media(min-width: 1890px)
+						line-height 50px !important
+				.company-content-item
+					size(25)
+					border-left dashed 1px white
+					transition all 400ms ease-in-out
+					cursor pointer
+					
+					@media(max-width: 850px)
+						size(50)
+					&:hover
+						color $color1 !important
+					.company-icon-field
+						size(100)
+						text-align center
+						font-size 25px
+					.company-content-field
+						size(100)
+						text-align center
+						h4
+							font-weight: bold
+							font-size 1rem
+							@media(max-width: 767px)
+								font-size 1.2rem
+#services
+	font-family $font1
+	.services-presentation
+		.container
+			.row
+				.services-presentation-title
+					size(100)
+					h3
+						text-align center
+						color $color2	
+						font-weight: bold
+						font-size: 4rem
+						border-bottom solid 1px $color2
+						.service-title-cog
+							transition all 1000ms ease-in-out
+				.service-itens
+					padding 40px 0
+					size(100)					
+					.service-item
+						transition all 700ms ease-in-out
+						margin 1%
+						size(23)
+						height: 3rem						
+						border solid 1px $color2
+						text-align center
+						background-color alpha($color2 5%)
+						@media(max-width: 767px)
+							size(100)
+							margin 5px 0
+						.service-item-title
+							$color2				
+							position relative			
+							.service-item-title-text
+								line-height: 3rem
+								font-weight: bolder
+								size(100)
+								.service-item-icon
+									font-size: 2rem
+									line-height: 3rem
+									position absolute
+									left 10px
+									transition transform 700ms ease-in-out
+						&:hover
+							border solid 1px $color5
+							color $color5
+							border-right solid 5px $color5
+							border-left solid 5px $color5
+							background-color alpha($color5 10%)
+							.service-item-icon
+								transform rotate(180deg)
+					.service-active
+						border solid 1px $color5
+						color $color5
+						border-right solid 5px $color5
+						border-left solid 5px $color5
+						background-color alpha($color5 10%)
+						.service-item-icon
+							transform rotate(180deg)
+#depositions
+	position relative
+	color white
+	font-family $font1	
+	.depositions-presentation
+		padding 3rem 20px
+		font-weight: bolder
+		size(100)
+		height 100%
+		background-color alpha(black, 50%)
+		top 0
+		left 0
+		display block
+		.container
+			.row
+				.depositions-content
+					.deposition
+						padding 3rem 20px
+						.deposition-img
+							text-align center
+							size(20)
+							@media(max-width: 767px)
+								size(100)
+							img 
+								border-radius 50%
+								max-width: 150px
+								border solid 5px white
+								box-shadow 0px 0px 5px black
+						.deposition-title
+							font-weight: bolder
+							text-align: left
+							font-size 25px
+							size(80)
+							padding-bottom 40px
+							@media(max-width: 767px)
+								text-align center
+								padding-bottom 0px
+								size(100)
+						.deposition-content
+							font-weight: normal
+							text-align justify
+							size(80)
+							font-size 25px
+							@media(max-width: 767px)
+								size(100)
+							i
+								font-size: 10px
+								vertical-align: top
+#clients
+	position relative
+	color white
+	font-family $font1	
+	padding 3rem 0
+	.clients-presentation
+		padding 3rem 20px
+		font-weight: bolder
+		size(100)
+		height 100%
+		background-color alpha(black, 50%)
+		top 0
+		left 0
+		display block
+		.container
+			.row
+				.clients-content
+					.client
+						padding 3rem 20px
+						margin 20px 0
+						size(20)
+						@media(max-width: 767px)
+							size(50)
+						.client-img
+							text-align center
+							size(100)
+							@media(max-width: 767px)
+								size(100)
+							img 
+
+								max-width: 100%
+								border solid 5px white
+								box-shadow 0px 0px 5px black
+								height auto
+								
+
+
+
+
+.rotate
+	transform rotate(180deg)
+
+
+    
